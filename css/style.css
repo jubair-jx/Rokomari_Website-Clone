@@ -1,4 +1,1001 @@
+.container{
+    width: 1320px;
+    display: flex;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+a:hover{
+    text-decoration: none;
+}
+ul li a:hover{
+    text-decoration: none;
+    list-style: none;
+}
 *{
     padding: 0;
     margin: 0;
 }
+/*-------------------header Part-------------------*/
+.header_part{
+    background-color: rgb(230, 224, 224);
+    height: 70px;
+}
+.header_part .header_images img{
+    margin-left: 80px;
+}
+.header_logo img{
+    margin: 25px 120px;
+}
+.header_form{
+    
+}
+.header_form .search_bar{
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    display: flex;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.search_bar input{
+    flex: 1;
+    outline: 0;
+    padding: 8px 200px;
+    border: 1px solid#bac9cf; 
+    border-bottom: 2px solid orange;
+    border-radius: 5px 0px 0px 5px ;
+}
+.search_bar input:hover{
+    border: 1px solid #0397d3 ;
+    transition: 1s;
+
+}
+.submit-button{
+    height: 40px;
+    width: 50px;
+    outline: none;
+    border: 0;
+    color: #fff;
+    background-color:#0397d3  ;
+    border-radius:0px 5px 5px 0px ;
+  
+}
+.submit-button a img{
+    color: #fff;
+}
+
+.submit-button:hover{
+    background-color:#0bbaff  ;
+}
+::placeholder{
+    color: rgb(93, 89, 89); 
+   
+}
+.buyLogo-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    padding: 10px 10px;
+
+}
+
+.nav-buy-icons{
+    height: 40px;
+}
+.signIn-Button{
+    height: 40px;
+    width: 90px;
+    background-color: white;
+    border: 1px solid #bac9cf;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-size: 15px;
+    transition: .3s;
+    font-family: sans-serif;
+}
+.signIn-Button:hover{
+    background-color: #4ddf30;
+    color: white;
+}
+/*-------------------header Part-------------------*/
+/*-------------------navbar Part-------------------*/
+.item{
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+.item ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    border-bottom:1px solid#0bbaff;
+    align-items: flex-end;
+    
+    
+}
+.item ul li{
+    transition: .3s;
+    padding: 10px 10px 20px 10px;
+    
+}
+.item ul li:hover{
+    border-top: 1px solid #0397d3;
+    border-left: 1px solid #0397d3;
+    border-right: 1px solid #0397d3;
+    border-bottom: 2px solid #fff;
+
+}
+.item ul span{
+    
+}
+.item ul li a{
+    color: rgb(77, 72, 72);
+    text-decoration: none;
+}
+.item_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 100px;
+    text-decoration: none;
+}
+.item_2 ul li{
+    float: left;
+    margin-right: 55px;
+    list-style: none;
+}
+.item_2 ul li a{
+    text-decoration: none;
+    color: rgb(77, 72, 72);
+}
+.banner_item{
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+
+
+/*-------------------navbar Part-------------------*/
+/*-------------------product Part-------------------*/
+.card-section{
+    width: 100%;  
+    background-color: rgba(245, 241, 241, 0.993);
+    box-shadow: 0px 4px 6px -3px #f8f3f3;
+    height: 460px;
+    margin-left: 30px;
+  
+}
+.card-header{
+    font-size: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+    position: relative;
+   
+}
+.card1{
+   padding:0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 370px;
+}
+.card1 a{
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 50px;
+    background-color: #0397d3;
+    color: #fff;
+    margin-top: 15px;
+    
+
+}
+
+.card1 a:hover{
+   
+}
+.card1:hover{
+    transition-delay: .3s;
+    display: block;
+    box-shadow: inset 3px 3px  3px 0px  rgb(146, 145, 145),inset -3px -3px 3px 0px   rgb(187, 187, 187);
+    opacity: .7;
+    
+    
+}
+.card1-img{
+    width: 85%;
+    height: 230px;
+    padding-top: 5px;
+}
+.book-title{
+    font-size:12px ;
+    margin:6px 0px;
+    width: 100%;
+    text-align: center;
+}
+.writer{
+    font-size: 13px;
+    margin: 6px;
+}
+.reg-price{
+    color: #757070;
+    text-decoration: line-through;
+    text-decoration-color: rgb(241, 64, 64);
+    font-size: 19px;
+    margin: 5px;
+}
+.of-price{
+    font-size: 22px;
+}
+/*-------------------product Part-------------------*/
+/*-------------------best selling Part-------------------*/
+.card2-section{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    
+    }
+    
+    .cards2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .card2{
+        width: 30%;
+        height: 600px;
+        margin-top: 50px;
+        margin: 20px;
+    
+        
+    }
+    .Religious{
+        background-color:rgb(144, 190, 52);
+    }
+    .boier-dhoron{
+        height: 70px;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .c2-btns{
+        height: 50px;
+        margin:0px 10px ;
+        background-color:white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .c2-btns a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+    .c2-btn1{
+        height: 40px;
+        width: 78px;
+        margin: 10px 10px 0px 0px;
+        border: 0;
+        outline: none; 
+       
+        border-radius: 10px 10px 0px 0px;
+        background-image: linear-gradient( rgb(205, 248, 118), rgb(236, 237, 238)); 
+        border-top: 2px solid rgb(144, 190, 52);
+    }
+    .c2-btn2{
+        height: 40px;
+        width: 78px;
+        margin: 10px 0px 0px 10px;
+        border: 1px solid rgb(236, 237, 238);
+        border-radius: 10px 10px 0px 0px;
+        outline: none;
+        background-image: linear-gradient( rgb(255, 255, 255) , rgb(236, 237, 238));
+    
+    }
+    
+    .c2-search{
+        
+        height: 69px;
+        background-color: rgb(236, 237, 238);
+        margin:0px 10px ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .c2-search p{  
+        width: 90%;
+        height: 35px;
+        border-radius: 19px;
+        background-color: white;
+        margin:9px;
+        padding:0px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #858585;
+    }
+    .Religious-books{
+        background-color: rgb(236, 237, 238); 
+        margin:0px 10px ;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    
+    }
+    .Religious-books a{
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+    
+    }
+    .Religious-today{
+        color: black;
+        margin:0px 30px 0px 0px;
+        border-bottom: 2px solid rgb(144, 190, 52);
+        
+    }
+    .Religious-all{
+        color: #686868;
+    
+    }
+    .c2-book{
+        background-color: white;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin:0px 10px ;
+        height:67px ;
+        border-bottom:1px solid #d7dada;
+       
+    }
+    .c2-book h1{
+         color: sandybrown;
+         font-size: 25px;
+         padding-left: 8px;
+         
+    }
+    .c2-book-img{
+        height: 50px;
+        margin:0px 10px;
+    }
+    .c2-book-details{
+        
+    }
+    .c2-book-name{
+        font-size: 10px;
+    }
+    .c2-writer{
+        font-size: 10px;
+    }
+    .c2-icon{
+        margin-left: auto;
+        margin-right: 20px;
+        height: 25px;
+    }
+    .c2-button{
+        height: 40px;
+        width: 80px;
+        margin: 15px 0px 10px 130px;
+        color: #0397d3;
+        border:  1px solid #0397d3;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: white;
+        
+    }
+    .c2-button:hover{
+        background-color:#0397d3;
+        color: white;
+    }
+    
+    /* fiction */
+    .Fiction{
+        background-color: sandybrown;
+    }
+    .fic1{
+         background-image: linear-gradient(  rgb(240, 197, 159), rgb(236, 237, 238)); 
+         border-top: 2px solid sandybrown;
+    
+    }
+    .ficTD{
+        border-bottom: 2px solid  sandybrown;
+    }
+    /* non fiction */
+    .Non-fiction{
+        background-color: rgb(99, 196, 75);
+    }
+    .Non-fic1{
+         background-image: linear-gradient(  rgb(165, 255, 143), rgb(236, 237, 238)); 
+         border-top: 2px solid rgb(99, 196, 75);
+    
+    }
+    .Non-ficTD{
+        border-bottom: 2px solid  rgb(99, 196, 75);
+    }
+/*-------------------best selling Part-------------------*/
+/*-------------------What do you read Part-------------------*/
+    
+.kinds-off-books{
+    background-color:white;
+    width: 100%;
+    height: 170px;
+    padding: 15px;
+    margin: 50px 0px;
+    box-shadow: 0px 4px 6px -3px #9c9c9c;
+ 
+ 
+ }
+ .KB-header{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     height: 40px;
+    
+ }
+ .KB-taitel{
+     font-size: 20px;
+     color: rgb(10, 8, 8);
+     font-weight: 400;
+     padding: 5px;
+ }
+ .KB-sub-taitel{
+     font-size: 14px;
+     color: #585656;
+     padding:5px;
+ }
+ .KB-books{
+     height: 120px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+ .KB-Book{
+     background-image:url(../images/bg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 100px;
+     width: 15%;
+     border-radius: 10px;
+     margin: 10px;
+ 
+ }
+ .KB-book-name{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 17px;
+     font-weight: bold;
+     text-align: center;
+     color: rgb(20, 19, 19);
+     background-color: #0397d3;
+     color: #fff;
+     border-radius: 5px;
+ }
+/*-------------------What do you read Part-------------------*/
+/*-------------------Ebook Part-------------------*/
+.card-section{
+    width: 100%;  
+    background-color: rgba(245, 241, 241, 0.993);
+    box-shadow: 0px 4px 6px -3px #f8f3f3;
+    height: 460px;
+    margin-left: 30px;
+    margin-top: 50px;
+  
+}
+.card-header{
+    font-size: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-left: 30px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+    position: relative;
+   
+}
+.card1{
+   padding:0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 370px;
+}
+.card1 a{
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 50px;
+    background-color: #0397d3;
+    color: #fff;
+    margin-top: 15px;
+    
+
+}
+
+.card1 a:hover{
+   
+}
+.card1:hover{
+    transition-delay: .3s;
+    display: block;
+    box-shadow: inset 3px 3px  3px 0px  rgb(146, 145, 145),inset -3px -3px 3px 0px   rgb(187, 187, 187);
+    opacity: .7;
+    
+    
+}
+.card1-img{
+    width: 85%;
+    height: 230px;
+    padding-top: 5px;
+}
+.book-title{
+    font-size:12px ;
+    margin:6px 0px;
+    width: 100%;
+    text-align: center;
+}
+.writer{
+    font-size: 13px;
+    margin: 6px;
+}
+.reg-price{
+    color: #757070;
+    text-decoration: line-through;
+    text-decoration-color: rgb(241, 64, 64);
+    font-size: 19px;
+    margin: 5px;
+}
+.of-price{
+    font-size: 22px;
+}
+
+
+/*-------------------Ebook Part-------------------*/
+/*-------------------launched Part-------------------*/
+.card-section{
+    width: 100%;  
+    background-color: rgba(245, 241, 241, 0.993);
+    box-shadow: 0px 4px 6px -3px #f8f3f3;
+    height: 460px;
+    margin-left: 30px;
+    margin-top: 50px;
+  
+}
+.card-header{
+    font-size: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-left: 30px;
+}
+ button{
+    border: 1px solid #0397d3;
+    padding: 10px 15px;
+    margin-left: 1150px;
+    transition: .5s;
+}
+button:hover{
+    background-color: #0397d3;
+    color: #fff;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+    position: relative;
+   
+}
+.card1{
+   padding:0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 370px;
+}
+.card1 a{
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 50px;
+    background-color: #0397d3;
+    color: #fff;
+    margin-top: 15px;
+    
+
+}
+
+.card1 a:hover{
+   
+}
+.card1:hover{
+    transition-delay: .3s;
+    display: block;
+    box-shadow: inset 3px 3px  3px 0px  rgb(146, 145, 145),inset -3px -3px 3px 0px   rgb(187, 187, 187);
+    opacity: .7;
+    
+    
+}
+.card1-img{
+    width: 85%;
+    height: 230px;
+    padding-top: 5px;
+}
+.book-title{
+    font-size:12px ;
+    margin:6px 0px;
+    width: 100%;
+    text-align: center;
+}
+.writer{
+    font-size: 13px;
+    margin: 6px;
+}
+.reg-price{
+    color: #757070;
+    text-decoration: line-through;
+    text-decoration-color: rgb(241, 64, 64);
+    font-size: 19px;
+    margin: 5px;
+}
+.of-price{
+    font-size: 22px;
+}
+/*-------------------launched Part-------------------*/
+/*-------------------most read Part-------------------*/
+.must-reads{
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: 270px;
+    box-shadow: 0px 4px 6px -3px #9c9c9c;
+    margin-top: 50px;
+}
+.MR-header{
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px;
+}
+.reads{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.read{
+    width: 18%;
+    height: 200px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.read:hover.read p{
+    color: #0397d3;
+}
+.MR-img{
+    margin: 10px;
+    height: 130px;
+}
+.read p{
+    margin: 5px 0px;
+    font-size: 17px;
+    font-weight: 300;
+}
+.miss{
+    margin-top: 20px;
+}
+
+/*-------------------most read Part-------------------*/
+/*-------------------freedom read Part-------------------*/
+.card-section{
+    width: 100%;  
+    background-color: rgba(245, 241, 241, 0.993);
+    box-shadow: 0px 4px 6px -3px #f8f3f3;
+    height: 460px;
+    margin-left: 30px;
+    margin-top: 100px;
+  
+}
+.card-header{
+    font-size: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-left: 30px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+    position: relative;
+   
+}
+.card1{
+   padding:0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 370px;
+}
+.card1 a{
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 50px;
+    background-color: #0397d3;
+    color: #fff;
+    margin-top: 15px;
+    
+
+}
+
+.card1 a:hover{
+   
+}
+.card1:hover{
+    transition-delay: .3s;
+    display: block;
+    box-shadow: inset 3px 3px  3px 0px  rgb(146, 145, 145),inset -3px -3px 3px 0px   rgb(187, 187, 187);
+    opacity: .7;
+    
+    
+}
+.card1-img{
+    width: 85%;
+    height: 230px;
+    padding-top: 5px;
+}
+.book-title{
+    font-size:12px ;
+    margin:6px 0px;
+    width: 100%;
+    text-align: center;
+}
+.writer{
+    font-size: 13px;
+    margin: 6px;
+}
+.reg-price{
+    color: #757070;
+    text-decoration: line-through;
+    text-decoration-color: rgb(241, 64, 64);
+    font-size: 19px;
+    margin: 5px;
+}
+.of-price{
+    font-size: 22px;
+}
+
+/*-------------------freedom read Part-------------------*/
+/*-------------------footer read Part-------------------*/
+footer{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.footer-peart1{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.contact{
+    width: 28%;
+    font-size: 12px;
+    margin: 10px 20px;
+}
+.contact img{
+    margin-right:10px ;
+
+}
+.hotline{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.Corporate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Corporate p{
+    margin: 5px;
+}
+.mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px;
+}
+.address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+}
+.midea{
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 10px 0px;
+
+}
+
+.midea h1{
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.midea img{
+    height: 30px;
+
+   
+}
+/* .All-links */
+.All-links{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin: 10px 20px;
+    
+}
+.All-links h1{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #0f0f0f;
+    font-weight: 400;
+
+}
+.All-links ul li a{
+    font-size: 10px;
+
+}
+
+.link-part1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+   
+    
+}
+
+.home,.Products,.Get-know,.shop,.support,.publicies{
+    width: 28%;
+}
+/* like page */
+.Like-us{
+    width: 30%;
+    margin: 10px 20px;
+}
+.Like-us h1{
+    font-weight: 200;
+    margin: 10px 0px;
+}
+.fb-page{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+   
+}
+
+.logo-titei{
+    display: flex;
+}
+.logo-titei img{
+    height: 50px;
+}
+.fb-btn{
+    background-color: white;
+    border: 1px solid slategray;
+    margin-top: 15px;
+    padding: 3px;
+
+}
+.fb-btn a{
+    text-decoration: none;
+    color: black;
+}
+.Download{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0px;
+
+}
+.Download h1{
+    padding-left: 10px ;
+    color: #2c2c2c;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.download-link img{
+    height: 40px;
+   width: 100px;
+}
+/*  */
+.payment{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.payment h1{
+    font-weight: 100;
+    color: #2c2c2c;
+}
+.payment img{
+    height: 30px;
+   padding: 10px;
+}
+
+/* copyright */
+.copyright{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #cfd0d1;
+}
+
+/*-------------------footer read Part-------------------*/
